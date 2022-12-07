@@ -203,13 +203,13 @@ export function isUnifiedPlanEnabled(state: IReduxState): boolean {
 }
 
 /**
- * Restores a Jitsi Meet config.js from {@code localStorage} if it was
+ * Restores a BlockStar Meet config.js from {@code localStorage} if it was
  * previously downloaded from a specific {@code baseURL} and stored with
  * {@link storeConfig}.
  *
  * @param {string} baseURL - The base URL from which the config.js was
  * previously downloaded and stored with {@code storeConfig}.
- * @returns {?Object} The Jitsi Meet config.js which was previously downloaded
+ * @returns {?Object} The BlockStar Meet config.js which was previously downloaded
  * from {@code baseURL} and stored with {@code storeConfig} if it was restored;
  * otherwise, {@code undefined}.
  */
@@ -255,7 +255,7 @@ export function setConfigFromURLParams(
     // params = {
     //     "config.disableAudioLevels": false,
     //     "config.channelLastN": -1,
-    //     "interfaceConfig.APP_NAME": "Jitsi Meet"
+    //     "interfaceConfig.APP_NAME": "BlockStar Meet"
     // }
     // We want to have:
     // json = {
@@ -264,7 +264,7 @@ export function setConfigFromURLParams(
     //         "channelLastN": -1
     //     },
     //     interfaceConfig: {
-    //         "APP_NAME": "Jitsi Meet"
+    //         "APP_NAME": "BlockStar Meet"
     //     }
     // }
     config && (json.config = {});
